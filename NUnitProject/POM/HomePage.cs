@@ -30,14 +30,9 @@ namespace NUnitProject.POM
         {
             //IWebElement frame=driver.FindElement(By.Id("userpilot-builder"));
             driver.SwitchTo().Frame(0);
-            //driver.SwitchTo().Frame(driver.FindElement(By.XPath("//*[@id='popup']//div[text()='Dismiss']")));
-            driver.FindElement(By.XPath("//*[@id='popup']//div[text()='Dismiss']")).Click();
-            //IJavaScriptExecutor jse= (IJavaScriptExecutor) driver;
-            //jse.ExecuteScript("argument[0].click()", dismiss);
+            driver.FindElement(By.XPath("//*[@id='popup']/div/div[3]")).Click();
             
             driver.SwitchTo().DefaultContent();
-
-
         }
 
         public void SelectToggle()
